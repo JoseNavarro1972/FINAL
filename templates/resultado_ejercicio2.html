@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado Ejercicio 2</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h2>Inicio de Sesión</h2>
+    <label>Ingresa tu nombre</label>
+    <br>
+    <input type="text" name="nombre" value="{{ nombre }}" readonly>
+
+    <label>Ingresa tu contraseña</label>
+    <p>****</p>
+
+    <hr>
+
+    <h3>Resultado</h3>
+    <p>{{ mensaje_bienvenida }}</p>
+</body>
+</html>
